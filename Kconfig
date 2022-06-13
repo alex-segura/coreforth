@@ -1,0 +1,42 @@
+## SPDX-License-Identifier: GPL-2.0-only
+
+# For a description of the syntax of this configuration file,
+# see http://lxr.linux.no/source/Documentation/kbuild/kconfig-language.txt.
+#
+
+menu "General"
+
+config PAYLOAD_INFO_NAME
+  string "Payload name"
+  default "coreforth"
+  help
+   The name of this payload for use in (e.g.) Bayou.
+
+config PAYLOAD_INFO_LISTNAME
+  string "Payload menu entry name"
+  default "Forth"
+  help
+   The name of this payload's menu entry for use in (e.g.) Bayou.
+
+config PAYLOAD_INFO_DESC
+  string "Payload description"
+  default "Forth interpreter"
+  help
+   The description of this payload for use in (e.g.) Bayou.
+
+config PAYLOAD_INFO_VERSION
+  string "Payload version"
+  default "0.1"
+  help
+  The version number of this payload.
+
+config LTO
+  bool "Use link time optimization (LTO)"
+  default n
+  help
+   Compile with link time optimization. This can often decrease the
+   final binary size, but may increase compilation time. This option
+   is most effective when LTO is also enabled in libpayload, which
+   is done separately.
+
+endmenu

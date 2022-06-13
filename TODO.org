@@ -1,0 +1,14 @@
+* Leave, loop, loop+
+
+Need to resolve ~leave~'s and insert jmps to end of loop
+
+* editor wordlist
+
+* clean up ~CONSTANT~, ~VARIABLE~, ~VALUE~
+
+* sysrq key should call ~QUIT~, or better, jump to debugger
+- this means enabling and handling interrupts
+
+* assembler words
+
+* anything else for standard

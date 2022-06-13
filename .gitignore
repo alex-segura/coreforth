@@ -1,0 +1,7 @@
+build/*
+lpbuild/*
+.config
+.config.old
+lp.config
+lp.config.old
+.xcompile
